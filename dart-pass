@@ -1,0 +1,56 @@
+q1/
+
+void main() {
+    final hour =  DateTime.now().hour;
+    print(hour);
+  }
+
+
+ الخطأ هو كلمة const 
+ 
+ q2/
+ 
+void main() {
+  Dog dog = Dog();
+  dog.printName();
+  dog.printSound();
+
+}
+
+abstract class Animal {
+// Body of abstract class
+void printName (); // Abstract method
+void printSound (); // Abstract method
+}
+
+class Dog extends Animal {
+  @override
+  void printName() {
+    print(" Name Is Dog");
+  }
+    @override
+    void printSound() {
+      print("Sound is Dog");
+  }}
+
+
+class Cow extends Animal {
+  @override
+  void printName() {
+    print("Name Is Cow");
+  }
+  @override
+  void printSound() {
+    print("Sound is Cow");
+  }}
+
+
+
+class Cat extends Animal {
+  @override
+  void printName() {
+    print("Name Is Cat");
+  }
+  @override
+  void printSound() {
+    print("Sound is Cat");
